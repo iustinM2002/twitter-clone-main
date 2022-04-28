@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`homepage match snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="min-h-[100vh] w-full flex lg:flex-col"
+    >
+      
+      <div
+        class="image-starter min-h-[100vh] w-[50%] bg-cover bg-center bg-[url('../images/starter_semi_bg.png')] flex justify-center items-center lg:order-2 lg:w-full lg:min-h-[50vh]"
+      >
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-twitter text-white text-[15rem] sm:text-[10rem]"
+          data-icon="twitter"
+          data-prefix="fab"
+          focusable="false"
+          role="img"
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <div
+        class="form-starter flex flex-col justify-center px-[2rem] lg:w-[70%] lg:mx-auto "
+      >
+        <div
+          class="icon lg:pt-[3rem] "
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-twitter text-[#1D9BF0] text-[2.5rem]"
+            data-icon="twitter"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div
+          class="register-form flex flex-col "
+        >
+          <h2
+            class="font-bold text-[4rem] py-[4rem] md:text-[2rem] sm:py-[2rem]"
+          >
+            Happening now
+          </h2>
+          <h3
+            class="text-[1.7rem] font-bold"
+          >
+            Join Twitter today
+          </h3>
+          <div
+            class=" cursor-pointer link my-[1rem] text-white bg-[#1D9BF0] w-[17rem] flex justify-center py-[0.5rem] rounded-[10rem] font-bold text-[0.9rem] transition-all hover:bg-[#1884cb]"
+          >
+            <button
+              class="font-bold"
+            >
+              Sign up with phone or email
+            </button>
+          </div>
+          <p
+            class="text-[0.7rem] w-[17rem] leading-[0.75rem] text-[#00000096]"
+          >
+            By signing up, you agree to the 
+            <span
+              class="text-[#1D9BF0]"
+            >
+              Terms of Service
+            </span>
+             and 
+            <span
+              class="text-[#1D9BF0]"
+            >
+              Privacy Policy
+            </span>
+            , including 
+            <span
+              class="text-[#1D9BF0]"
+            >
+              Cookie Use.
+            </span>
+          </p>
+        </div>
+        <div
+          class="login-form pt-[4rem] flex flex-col lg:pb-[2rem] sm:pt-[2rem] "
+        >
+          <h4
+            class="font-bold text-[1.2rem]"
+          >
+            Already have an account?
+          </h4>
+          <div
+            class="cursor-pointer my-[1rem] link text-[#1D9BF0] w-[17rem] flex justify-center py-[0.5rem] rounded-[10rem] font-bold text-[0.9rem] border-[1px] border-[#00000035] transition-all hover:bg-[#1883cb15]"
+          >
+            Sign in
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="min-h-[10vh] text-[#7a7a7a] flex justify-center items-center px-[2rem] text-[0.9rem] w-full flex-wrap"
+    >
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        About
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Help Center
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Terms of Service
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Privacy Policy
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Cookie Policy
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Accessibility
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Ads info
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Blog
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Status
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Careers
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Brand Resources
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Advertising
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Marketing
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Twitter for Business
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Developers
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Directory
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        Settings
+      </p>
+      <p
+        class="px-[0.7rem] py-[0.2rem] "
+      >
+        © 2022 Twitter, Inc.
+      </p>
+    </div>
+  </div>
+   
+</div>
+`;
