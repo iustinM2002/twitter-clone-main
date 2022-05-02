@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 import ProfileBody from './ProfileBody';
 import WhoToFollow from './WhoToFollow';
 // context import 
-import { ProfileContext } from 'context/ProfileContext';
+import { ProfileContext } from '../../../context/ProfileContext';
 
 
 const Profile:NextPage = () : JSX.Element => {

@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { NextPage } from 'next';
 // context 
-import { NavContext } from 'context/NavContext';
-import { ProfileContext } from 'context/ProfileContext';
+import { NavContext } from '../../context/NavContext';
+import { ProfileContext } from '../../context/ProfileContext';
 
 const Company:NextPage<{company:any}> = ({company}):JSX.Element => {
   // context deconstruct

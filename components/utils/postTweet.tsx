@@ -3,9 +3,9 @@ import { NextPage } from 'next';
 // components
 import SelectImage from './SelectImage';
 // context   
-import { ProfileContext } from 'context/ProfileContext';
-import { TweetContext } from 'context/TweetContext';
-import { PostImageContext } from 'context/PostImageContext';
+import { ProfileContext } from '../../context/ProfileContext';
+import { TweetContext } from '../../context/TweetContext';
+import { PostImageContext } from '../../context/PostImageContext';
 import dynamic from 'next/dynamic';
 const DynamicComponent = dynamic(() => import('../utils/SelectImage'),{ssr:false});
 
@@ -46,7 +46,7 @@ const PostTweet:NextPage = ():JSX.Element => {
     <div className='border-b-[1px] border-[#00000310]'>
     <div className='flex'>
         <div className=" ml-[0.5rem] w-[50px]  h-[50px] bg-cover bg-center rounded-full" style={{backgroundImage:`url(${currentProfilePic})`}} ></div>
-        <input value={tweet} onChange={(e) =>AddTweetHandler(e)} className='border-b-[1px] border-[#00000310 w-[90%] xl:w-[75%] mx-auto outline-none' type="text" placeholder="What's happening?" />
+        <input value={tweet} onChange={(e) =>AddTweetHandler(e)} className='border-b-[1px] border-[#00000310 w-[90%] xl:w-[75%] mx-auto outline-none' type="text" data-testid='inputform' placeholder="What's happening?" />
     </div>
       <div className="flex">
           <DynamicComponent setActiveButton={setActiveButton}/>

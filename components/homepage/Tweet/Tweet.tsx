@@ -4,9 +4,9 @@ import { NextPage } from 'next';
 import CommentSec from './comments/CommentSec';
 import Reaction from '../../utils/Reaction';
 // context
-import { ProfileContext } from 'context/ProfileContext';
-import { CommentContext } from 'context/CommentContext';
-import { PostImageContext } from 'context/PostImageContext';
+import { ProfileContext } from '../../../context/ProfileContext';
+import { CommentContext } from '../../../context/CommentContext';
+import { PostImageContext } from '../../../context/PostImageContext';
 
 const Tweet:NextPage<{tweet:string,index:number}> = ({tweet,index}):JSX.Element => {
     // deconstruct context
@@ -20,7 +20,7 @@ const Tweet:NextPage<{tweet:string,index:number}> = ({tweet,index}):JSX.Element 
     const [comments,setComments] = commentsLib;
     console.log(ImagesSrc)
     return (
-      <div className='border-b-[1px] border-[#00000310]'>
+      <div data-testid='tweet' className='border-b-[1px] border-[#00000310]'>
           <div className="flex py-[1rem] px-[0.5rem] ">
           <div className=" mx-[0.5rem] w-[60px]  h-[50px] bg-cover bg-center rounded-full" style={{backgroundImage:`url(${currentProfilePic})`}} ></div>
               <div className="px-[0.5rem] w-full">

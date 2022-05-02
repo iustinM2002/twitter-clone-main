@@ -5,7 +5,7 @@ import { uuid } from 'uuidv4';
 // usetable
 import {useTable} from 'react-table';
 // context
-import { RandomContext } from 'context/randomUserContext';
+import { RandomContext } from '../../../context/randomUserContext';
 const WhoToFollow:NextPage = ():JSX.Element => {
     // context deconstruct
     const [randomUsersQuery,randomIpsumQuery,randomCompanyQuery] = useContext(RandomContext);

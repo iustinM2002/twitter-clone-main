@@ -6,7 +6,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 // importing util funtions
 import { handleOnChange , handleOnSubmit } from '../../../components/utils/utils';
 // context imports
-import { ProfileContext } from 'context/ProfileContext';
+import { ProfileContext } from '../../../context/ProfileContext';
 
 const EditProfile:NextPage<{setActiveEdit:any}> = ({setActiveEdit}:{setActiveEdit:any}):JSX.Element => {
     // state

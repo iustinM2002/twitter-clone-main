@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 // components
 import Company from './company';
 //context
-import { RandomContext } from 'context/randomUserContext';
+import { RandomContext } from '../../context/randomUserContext';
 
 const Recommandation:NextPage = ():JSX.Element => {
   // deconstruct context

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 // context
 import { ProfileContext } from '../../../../context/ProfileContext';
-import { CommentContext } from 'context/CommentContext';
+import { CommentContext } from '../../../../context/CommentContext';
 
 const CommentSec:NextPage<{comment:string,setComment:any,comments:string[],setComments:any,username:string}> = ({comment,setComment,comments,setComments,username}) => {
  

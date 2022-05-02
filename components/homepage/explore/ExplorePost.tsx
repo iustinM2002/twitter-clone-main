@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 import Reaction from '../../../components/utils/Reaction';
 import CommentSec from '../Tweet/comments/CommentSec';
 // context import 
-import { CommentContext } from 'context/CommentContext';
+import { CommentContext } from '../../../context/CommentContext';
 
 const ExplorePost:NextPage<{post:any}> = ({post}):JSX.Element => {
       

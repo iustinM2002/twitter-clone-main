@@ -11,7 +11,7 @@ import RandomProfile from '../components/homepage/randomProfiles/randomProfile';
 import Lists from '../components/homepage/lists/Lists';
 import IsLogged from '../components/utils/isLogged'
 // context
-import { LoginContext } from 'context/LoginContext';
+import { LoginContext } from '../context/LoginContext';
 import {ProfileContext} from '../context/ProfileContext';
 import {NavContext} from '../context/NavContext'
 

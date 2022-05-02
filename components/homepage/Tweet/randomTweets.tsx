@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 // components
 import RandomTweet from './RandomTweet';
 // context
-import { RandomContext } from 'context/randomUserContext';
+import { RandomContext } from '../../../context/randomUserContext';
 import { randomIntervalNumber } from '../../../components/utils/utils';
 
 const RandomTweets:NextPage = ():JSX.Element => {
@@ -14,5 +14,6 @@ const RandomTweets:NextPage = ():JSX.Element => {
     </div>
   )
 }
+
 
 export default RandomTweets

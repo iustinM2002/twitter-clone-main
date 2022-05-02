@@ -7,7 +7,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import RandomProfileBody from './randomProfileBody';
 import WhoToFollow from '../Profile/WhoToFollow';
 // context
-import { NavContext } from 'context/NavContext';
+import { NavContext } from '../../../context/NavContext';
 
 const RandomProfile:NextPage<{user:any}> = ({user}) => {
   // context deconstruct

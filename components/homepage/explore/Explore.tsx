@@ -5,7 +5,7 @@ import ExplorePost from './ExplorePost';
 // uuid
 
 // context
-import { RandomContext } from 'context/randomUserContext';
+import { RandomContext } from '../../../context/randomUserContext';
 const Explore = () => {
   const [randomUsersQuery,randomIpsumQuery,randomCompanyQuery,randomPostQuery] = useContext(RandomContext);
     

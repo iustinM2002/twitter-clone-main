@@ -6,7 +6,7 @@ import {faComment,faRetweet,faHeart,faArrowUpFromBracket} from '@fortawesome/fre
 // utils
 import {randomCommentShareNumber,randomLikeNumber} from './utils';
 // context
-import { CommentContext } from 'context/CommentContext';
+import { CommentContext } from '../../context/CommentContext';
 // styles
 const numberStyle = `number text-[#27272788] pt-[3px] pl-[2px] text-[0.9rem]`;
 

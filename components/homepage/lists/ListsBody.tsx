@@ -1,10 +1,10 @@
 import React,{useMemo,useContext,useState,useEffect} from 'react';
 import { useTable } from 'react-table';
-import { RandomContext } from 'context/randomUserContext';
-import { useQuery,QueryClient,dehydrate } from 'react-query';
-import { randomIntervalNumber } from '@/components/utils/utils';
+import { randomIntervalNumber } from '../../../components/utils/utils';
 import ListElement from './ListElement';
 import { NextPage } from 'next';
+// context
+import { RandomContext } from '../../../context/randomUserContext';
 
 const randomTagPost = async (tag:string) =>  await(await fetch(`https://dummyapi.io/data/v1/tag/${tag}/post?limit=10`,{headers:{'app-id':'625ffa6de6a875ce42705773'}}) ).json();
 interface ListBodyInt {
@@ -70,14 +70,5 @@ const ListsBody:NextPage<ListBodyInt> = ({ tag, setTag,activeElement,setActiveEl
     </div>
   )
 }
-export async function getServerSideProps(){
-    const client = new QueryClient();
-    await client.prefetchQuery('random_tag_post', () => randomTagPost(sm))
-    return{
-        props:{
-            dehydratedState: dehydrate(client)
-        }
-    }
 
-}
 export default ListsBody

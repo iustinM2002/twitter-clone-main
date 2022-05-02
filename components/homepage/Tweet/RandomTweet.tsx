@@ -5,9 +5,9 @@ import Reaction from '../../utils/Reaction';
 import CommentSec from './comments/CommentSec';
 import RandomProfile from '../randomProfiles/randomProfile';
 // context
-import { CommentContext } from 'context/CommentContext';
-import { NavContext } from 'context/NavContext';
-import { ProfileContext } from 'context/ProfileContext';
+import { CommentContext } from '../../../context/CommentContext';
+import { NavContext } from '../../../context/NavContext';
+import { ProfileContext } from '../../../context/ProfileContext';
 import { randomIntervalNumber } from '../../../components/utils/utils';
 
 const RandomTweet:NextPage<{index:number,picture:any,user:any,text:string,number:number}> = ({index,picture,user,text,number}):JSX.Element => {

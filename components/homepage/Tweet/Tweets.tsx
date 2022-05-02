@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 // import components
 import Tweet from './Tweet';
 // context
-import { TweetContext } from 'context/TweetContext';
+import { TweetContext } from '../../../context/TweetContext';
 
 const Tweets:NextPage = ():JSX.Element => {
     const [addTweets] = useContext(TweetContext);
