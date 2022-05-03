@@ -10,7 +10,7 @@ export const initialTweet:string[] | any = [];
 export const TweetReducer :any= (data:[],action:Action) =>{
     switch(action.type){
         case'ADD_TWEET':
-            return [...data,action.payload.tweet];
+            return [action.payload.tweet,...data];
         default: data;
     }
 }

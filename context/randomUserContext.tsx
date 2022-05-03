@@ -6,7 +6,7 @@ let initValue!:initalValue;
 export const RandomContext = createContext(initValue)
 let index = 50;
 
- const randomUsers= async () => await(await fetch(`https://randomuser.me/api/?results=${index}`)).json()
+export const randomUsers= async () => await(await fetch(`https://randomuser.me/api/?results=${index}`)).json()
  const randomIpsum= async () => await(await fetch('https://random-data-api.com/api/lorem_ipsum/random_lorem_ipsum?size=50')).json()
  const randomCompany= async () => await(await fetch('https://random-data-api.com/api/company/random_company?size=3')).json()
  const randomPost = async () => await( await fetch('https://dummyapi.io/data/v1/post?limit=50',{headers:{'app-id':'625ffa6de6a875ce42705773',}})).json();
@@ -21,7 +21,6 @@ export const RandomUserProvider = (props:any) => {
   const randomPicsumQuery = useQuery('random_picusm',randomPicsum);
   const randomTagQuery = useQuery('random_tag',randomTag);
   
-
   if(randomIpsumQuery.isLoading || randomUsersQuery.isLoading || randomCompanyQuery.isLoading || randomPostQuery.isLoading || randomPicsumQuery.isLoading || randomTagQuery.isLoading){
     return <Loading/>
   }

@@ -39,7 +39,7 @@ const Starter:NextPage = () : JSX.Element => {
             </div>
             <div className="login-form pt-[4rem] flex flex-col lg:pb-[2rem] sm:pt-[2rem] ">
                 <h4 className='font-bold text-[1.2rem]'>Already have an account?</h4>
-                <Link href='\login'><div className="cursor-pointer my-[1rem] link text-[#1D9BF0] w-[17rem] flex justify-center py-[0.5rem] rounded-[10rem] font-bold text-[0.9rem] border-[1px] border-[#00000035] transition-all hover:bg-[#1883cb15]">Sign in</div></Link>
+                <Link href='/login'><div className="cursor-pointer my-[1rem] link text-[#1D9BF0] w-[17rem] flex justify-center py-[0.5rem] rounded-[10rem] font-bold text-[0.9rem] border-[1px] border-[#00000035] transition-all hover:bg-[#1883cb15]">Sign in</div></Link>
             </div>   
         </div>
     </div>

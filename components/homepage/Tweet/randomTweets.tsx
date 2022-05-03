@@ -15,5 +15,4 @@ const RandomTweets:NextPage = ():JSX.Element => {
   )
 }
 
-
 export default RandomTweets

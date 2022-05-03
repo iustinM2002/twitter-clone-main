@@ -23,14 +23,18 @@ const SelectImage:NextPage<{setActiveButton:any}> = ({setActiveButton}) => {
         setChosenEmoji(emojiObject);
         if(chosenEmoji !== null)
         setTweet(tweet + " " + chosenEmoji.emoji);
-        if(tweet.length >= 1){
+        if(tweet.length > 1){
           setActiveButton(true)
         }
       };
+      const formChangeHandler = (e:React.SyntheticEvent) => {
+        handleOnChange(e,'first',setImageSrc)
+        setActiveButton(true)
+      }
     
   return (
     <div className="reactions w-full py-[2rem] pl-[2rem] flex justify-start">
-        <form className='md:w-[100px]' method='post' onSubmit={(e) =>handleOnSubmit(e,'order3',null,null,setImageSrc)} onChange={(e) =>handleOnChange(e,'first',setImageSrc)}>
+        <form className='md:w-[100px]' method='post' onSubmit={(e) =>handleOnSubmit(e,'order3',null,null,setImageSrc)} onChange={formChangeHandler}>
           <label htmlFor="file"><FontAwesomeIcon className='cursor-pointer text-[#1D9BF0] hover:bg-[#1d9cf01c] p-[0.5rem] hover:rounded-full' icon={faImage}/></label>
           <FontAwesomeIcon onClick={() => setActivePicker(!activePicker)} className='cursor-pointer text-[#1D9BF0] hover:bg-[#1d9cf01c] p-[0.5rem] hover:rounded-full' icon={faFaceSmile}/>
           <input className='invisible p-0' type="file" id='file' name='file' />

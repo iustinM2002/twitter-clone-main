@@ -18,9 +18,8 @@ const Tweet:NextPage<{tweet:string,index:number}> = ({tweet,index}):JSX.Element 
     const [currentUserName] = currentUsername;
     const [comment,setComment] =commentLib;
     const [comments,setComments] = commentsLib;
-    console.log(ImagesSrc)
     return (
-      <div data-testid='tweet' className='border-b-[1px] border-[#00000310]'>
+      <div  className='border-b-[1px] border-[#00000310]'>
           <div className="flex py-[1rem] px-[0.5rem] ">
           <div className=" mx-[0.5rem] w-[60px]  h-[50px] bg-cover bg-center rounded-full" style={{backgroundImage:`url(${currentProfilePic})`}} ></div>
               <div className="px-[0.5rem] w-full">
@@ -28,7 +27,7 @@ const Tweet:NextPage<{tweet:string,index:number}> = ({tweet,index}):JSX.Element 
                   <h4 className='px-[0.3rem] font-bold '>{currentUserName}</h4>
                   <h5 className='text-[#0000008a]' >{"@" + currentUserName.toLocaleLowerCase()}</h5>
                   </div>
-                  <p className='px-[0.3rem] md:text-[0.9rem]'>{tweet}</p>
+                  <p className='px-[0.3rem] md:text-[0.9rem]' data-testid='tweet'>{tweet}</p>
                  {ImagesSrc[index].length > 1 ? <div className=" mx-[0.5rem] w-full min-h-[300px] my-[1rem] bg-cover bg-center rounded-[1rem] md:w-[70%] md:min-h-[150px]"  style={{backgroundImage:`url(${ImagesSrc[index]})`}}></div> : ''}
               </div>
           </div>

@@ -24,12 +24,12 @@ const RandomTweet:NextPage<{index:number,picture:any,user:any,text:string,number
   const [activeUser,setActiveUser] = useState(false);
 
   return (
-    <div className='border-b-[1px] border-[#00000310] '  >
+    <div  className='border-b-[1px] border-[#00000310] '  >
       <div className="flex py-[1rem]  ">
           <div className=" mx-[0.8rem] w-[60px]  h-[50px] bg-cover bg-center rounded-full"  style={{backgroundImage:`url(${user.picture.large})`}}></div>
           <div className=" mx-[0.5rem] w-full">
               <div className="username flex">
-              <h4 className='px-[0.3rem] font-bold cursor-pointer hover:underline'  onClick={() =>{setCurrentUser(user); setNavIndex(8)}}>{user.name.first + " " + user.name.last}</h4>
+              <h4 data-testid='randomid' className='px-[0.3rem] font-bold cursor-pointer hover:underline'  onClick={() =>{setCurrentUser(user); setNavIndex(8)}}>{user.name.first + " " + user.name.last}</h4>
               <h5 className='text-[#0000008a]' >{`@${user.name.first.toLowerCase() + user.name.last.toLowerCase()}`}</h5> 
               </div>
               <p className='px-[0.5rem] md:text-[0.9rem]'>{text}</p>
